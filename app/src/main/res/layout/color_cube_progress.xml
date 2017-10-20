@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <View
+        android:id="@+id/orange_cube"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/orange_cube" />
+
+    <View
+        android:id="@+id/blue_cube"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/orange_cube"
+        android:background="@drawable/blue_cube" />
+
+    <View
+        android:id="@+id/green_cube"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/orange_cube"
+        android:background="@drawable/green_cube" />
+
+</RelativeLayout>

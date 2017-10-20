@@ -1,0 +1,30 @@
+﻿<resources>
+    <string name="app_name">TransQ</string>
+    <string name="my_app">My App</string>
+    <string name="multi_media">Multimedia</string>
+    <string name="recommended">Recommended</string>
+    <string name="add_app">add app</string>
+    <string name="select_all">select all</string>
+    <string name="cancel_all">cancel all</string>
+    <string name="add_all">add all</string>
+    <string name="add">add</string>
+    <string name="delete_my_app_dialog">Are you sure to delete %1$s ？</string>
+    <string name="connect_freq_24">2.4G Ordinary Connection</string>
+    <string name="connect_freq_5">5G Hi-speed Connection</string>
+    <string name="app_about_name">TransPad</string>
+    <string name="app_about_name_aoc">AOC TransQ</string>
+    <string name="feedback_title_pad">Hardware question</string>
+    <string name="feedback_edit_text_content_hint">For Hardware,For Application,For Content,Other Suggest</string>
+    <string name="viewpager_title_download">Download</string>
+    <string name="dlna_device_not_found">We did not find any devices</string>
+    <string name="dlna_select_device">Please select connect device</string>
+    <string name="dlna_warning">Please check device is in the normal mode, while ensuring the phone with Andy on the same LAN.</string>
+    <string name="dlna">DLNA</string>
+    <string name="dlna_stop">Exit DLNA</string>
+    <string name="dlna_playing">Mirroring</string>
+    <string name="dlna_retry">Retry</string>
+    <string name="dlna_cancel">No</string>
+    <string name="dlna_opening_message">Starting device playback...</string>
+    <string name="dlna_opening_failed">Your device is temporarily unable to play, whether to retry?</string>
+    <string name="dlna_select_nothing">Please select receive device</string>
+</resources>

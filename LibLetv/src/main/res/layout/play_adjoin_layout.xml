@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/ad_time_mute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="13dip"
+        android:layout_marginTop="13dip"
+        android:background="#80000000"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/ad_time"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:textSize="21sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/ad_mute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dip"
+            android:scaleType="centerInside"/>
+            <!-- android:src="@drawable/not_muted" -->
+        <!-- style="@style/letv_text_16_blue_white" -->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ad_vip"
+        android:layout_width="125dip"
+        android:layout_height="36dip"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="13dip"
+        android:layout_marginRight="13dip"
+        android:gravity="center"
+        android:text="跳过广告  ＞"/>
+        <!-- android:background="@drawable/ad_btn_blue_selecter" -->
+
+</FrameLayout>

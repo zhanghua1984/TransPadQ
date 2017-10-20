@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">百事可乐 </string>
+
+    <!-- 收藏提示字段 -->
+    <string name="toast_favorite_ok">收藏成功</string>
+    <string name="toast_favorite_failed">收藏失败</string>
+    <string name="toast_favorite_cancel">成功取消收藏</string>
+    <string name="toast_favorite_cancel_failed">取消收藏失败</string>
+
+    <!-- 详情页 -->
+    <string name="detail_episode">集数：<xliff:g id="now">%s</xliff:g>集/<xliff:g id="all">%s</xliff:g>集</string>
+    <string name="detail_director">导演：<xliff:g id="value">%s</xliff:g></string>
+    <string name="detail_starring">主演：<xliff:g id="value">%s</xliff:g></string>
+    <string name="detail_years">年份：<xliff:g id="value">%s</xliff:g></string>
+    <string name="detail_type">类型：<xliff:g id="value">%s</xliff:g></string>
+    <string name="detail_area">地区：<xliff:g id="value">%s</xliff:g></string>
+    <string name="detail_synopsis">剧情简介：<xliff:g id="value">%s</xliff:g></string>
+    <string name="detail_tag">标签：<xliff:g id="value">%s</xliff:g></string>
+    <string name="detail_total">总期数：<xliff:g id="value">%s</xliff:g></string>
+    <string name="detail_duration">时长：<xliff:g id="value">%s</xliff:g></string>
+    <string name="detail_lecturer">讲师：<xliff:g id="value">%s</xliff:g></string>
+    <string name="detail_school">学校：<xliff:g id="value">%s</xliff:g></string>
+    <string name="detail_discipline">学科：<xliff:g id="value">%s</xliff:g></string>
+    <string name="detail_language">语言：<xliff:g id="value">%s</xliff:g></string>
+    <string name="detail_theme">主题：<xliff:g id="value">%s</xliff:g></string>
+    <string name="detail_hd">高清</string>
+    <string name="detail_smooth">流畅</string>
+
+    <!-- toast 网络异常提示 -->
+    <string name="try_agin">刷新重试</string>
+    <string name="go_download">离线观看</string>
+    <string name="net_error">网络异常，请检查设置</string>
+    <string name="get_data_error">数据加载失败</string>
+    <string name="pim_desc_back">返回标识箭头</string>
+    <string name="moreaboutusactivity_webtitle">乐视网</string>
+    <string name="letv_account">帐号</string>
+    <string name="letv_account_inhit">请输入VIP账号</string>
+    <string name="password">密码</string>
+    <string name="password_hint_text">请输入密码</string>
+    <string name="login">激活</string>
+    <string name="cancel">取消</string>
+    <string name="replace_login">更换会员账号</string>
+    <string name="register">注册</string>
+    <string name="forget_pass">忘记密码</string>
+    <string name="letv_login">激活VIP会员</string>
+    <string name="letv_select_login">开通乐视会员</string>
+    <string name="letv_isvip">开通会员</string>
+    <string name="letv_remind0">请输入百度视频提供的VIP账号和密码，</string>
+    <string name="letv_remind1">如果您已有乐视的会员账号也可以使用。</string>
+    <string name="letv_remind2">本视频为乐视会员专享，开通会员后即可观看</string>
+   <string name="update_finish">下载完成</string>
+       <string name="update_finish_install">下载完成，点击安装</string>
+           <string name="update_asynctask_downloading">正在下载</string>
+               <string name="recommend_apk_download_info">添加下载文件成功</string>
+    <string name="recommend_apk_downloading_info">文件正在下载中</string>
+      <string name="play_ad_second">广告剩余%d秒</string>
+    
+    <string name="ad_play_view_text_top">2G/3G网络下观看会消耗大量流量</string>
+    <string name="ad_play_view_text_bottom">继续观看点击播放按钮</string>
+</resources>

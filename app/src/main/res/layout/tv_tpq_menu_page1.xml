@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/menu_window_bg"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/iv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dongle_window_first_app_margin_top"
+        android:layout_width="@dimen/dongle_window_app_item_width"
+        android:layout_height="@dimen/dongle_window_app_item_height"
+        android:src="@drawable/menu_add" />
+
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/iv2"
+        android:layout_below="@+id/iv1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/dongle_window_app_item_width"
+        android:layout_height="@dimen/dongle_window_app_item_height"
+        android:src="@drawable/menu_add" />
+
+    <ImageView
+        android:id="@+id/iv_menu"
+        android:layout_width="@dimen/dongle_window_back_height"
+        android:layout_height="@dimen/dongle_window_back_height"
+        android:layout_below="@+id/iv2"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/home_menu" />
+    <ImageView
+        android:id="@+id/new_message_circle"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_alignRight="@+id/iv_menu"
+        android:layout_alignTop="@+id/iv_menu"
+        android:src="@drawable/circle_shade_red"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="2dp"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/iv3"
+        android:layout_below="@+id/iv_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/dongle_window_app_item_width"
+        android:layout_height="@dimen/dongle_window_app_item_height"
+        android:src="@drawable/menu_add" />
+
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/iv4"
+        android:layout_below="@+id/iv3"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/dongle_window_app_item_width"
+        android:layout_height="@dimen/dongle_window_app_item_height"
+        android:src="@drawable/menu_add" />
+
+    <ImageView
+        android:id="@+id/window_back_iv"
+        android:layout_width="@dimen/dongle_window_back_width"
+        android:layout_height="@dimen/dongle_window_back_height"
+        android:paddingLeft="12dp"
+        android:src="@drawable/index_back"
+        android:layout_below="@+id/iv2"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

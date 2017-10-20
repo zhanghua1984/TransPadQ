@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/letv_color_fff6f6f6" >
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical" >
+            
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/net_error_flag"
+                android:id="@+id/net_error_flag"/>
+            <TextView
+                android:id="@+id/errorTxt" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网络异常，请检查设置"
+                style="@style/letv_text_15_ffa1a1a1"
+                android:layout_marginTop="16dip" />
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dip">
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/letv_text_15_blue_white_style"
+                    android:text="@string/try_agin"
+                    android:id="@+id/try_agin"
+                    android:layout_marginRight="10dip"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/letv_text_15_blue_white_style"
+                    android:text="@string/go_download"
+                    android:id="@+id/go_download"
+                    android:layout_marginLeft="10dip"/>
+            </LinearLayout>
+            
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

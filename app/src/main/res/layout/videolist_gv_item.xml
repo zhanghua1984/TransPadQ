@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_width="115dp"
+        android:layout_height="92dp"
+        android:background="@drawable/color_shade_orange"
+        android:id="@+id/rl_item">
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_image"
+            android:scaleType="fitXY"
+            app:riv_corner_radius="3dp"
+            app:riv_tile_mode="clamp"
+            android:src="@drawable/default_220_184"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <ImageView
+            android:id="@+id/iv_choose"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="3dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:src="@drawable/media_unchoose"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_image"
+        android:background="@drawable/color_shade_transparent"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/videolist_play"
+            />
+        <TextView
+            android:layout_marginTop="2dp"
+            android:id="@+id/tv_image_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:singleLine="true"
+            android:textSize="14sp" />
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

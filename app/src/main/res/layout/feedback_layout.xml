@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="17dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/feedback_title"
+        android:textColor="#ffffff"
+        android:textSize="19sp"/>
+
+    <RadioGroup
+        android:id="@+id/feedback_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/problems_pad"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/settings_feedback_title_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/feedback_title_pad"
+            android:textColor="@color/settings_feedback_title_text_color"
+            android:textSize="13sp"/>
+
+        <RadioButton
+            android:id="@+id/problems_soft"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/settings_feedback_title_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/feedback_title_soft"
+            android:textColor="@color/settings_feedback_title_text_color"
+            android:textSize="13sp"/>
+
+        <RadioButton
+            android:id="@+id/problems_content"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/settings_feedback_title_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/feedback_title_content"
+            android:textColor="@color/settings_feedback_title_text_color"
+            android:textSize="13sp"/>
+
+        <RadioButton
+            android:id="@+id/problems_else"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/settings_feedback_title_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/feedback_title_else"
+            android:textColor="@color/settings_feedback_title_text_color"
+            android:textSize="13sp"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/feedback_contact"
+        android:layout_width="452dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/half_transparent_background"
+        android:gravity="center_vertical"
+        android:hint="@string/feedback_edit_text_hint"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#dcdcdc"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="13sp"
+        />
+
+    <EditText
+        android:id="@+id/feedback_problems"
+        android:layout_width="452dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/half_transparent_background"
+        android:gravity="top"
+        android:hint="@string/feedback_edit_text_content_hint"
+        android:paddingBottom="11dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingTop="11dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#dcdcdc"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="13sp"
+        />
+    <!--<EditText-->
+    <!--android:id="@+id/feedback_problems"-->
+    <!--android:layout_width="452dp"-->
+    <!--android:layout_height="153dp"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginBottom="29dp"-->
+    <!--android:background="@drawable/half_transparent_background"-->
+    <!--android:gravity="top"-->
+    <!--android:hint="@string/feedback_edit_text_content_hint"-->
+    <!--android:paddingBottom="11dp"-->
+    <!--android:paddingLeft="13dp"-->
+    <!--android:paddingRight="13dp"-->
+    <!--android:paddingTop="11dp"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:textColorHint="#dcdcdc"-->
+    <!--android:textCursorDrawable="@drawable/cursor_color"-->
+    <!--android:textSize="13sp"-->
+    <!--/>-->
+
+    <Button
+        android:id="@+id/feedback_button"
+        android:layout_width="184dp"
+        android:layout_height="27dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dialog_button_ok"
+        android:text="@string/feedback_commit"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>

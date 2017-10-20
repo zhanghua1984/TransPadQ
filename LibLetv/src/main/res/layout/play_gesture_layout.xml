@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.letv.sdk.onehundredtv.video.play.view.LetvPlayGestureLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/play_gestrue"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/lock_icon"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/brightness_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:src="@drawable/brightness_icon" />
+
+        <RelativeLayout
+            android:layout_width="21dip"
+            android:layout_height="137dip"
+            android:background="@drawable/gesture_seek_bg" >
+
+            <ProgressBar
+                android:id="@+id/brightness_verseekbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="6.5dip"
+                android:layout_height="125dip"
+                android:layout_centerInParent="true"
+                android:progressDrawable="@drawable/ver_seekbar_style"
+                android:thumb="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progress_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/progress"
+            style="@style/letv_text_30_bold_shadow_ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/letv_text_30_bold_shadow_ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/" />
+
+        <TextView
+            android:id="@+id/total"
+            style="@style/letv_text_30_bold_shadow_ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/volume_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:src="@drawable/volume_icon" />
+
+        <RelativeLayout
+            android:layout_width="21dip"
+            android:layout_height="137dip"
+            android:background="@drawable/gesture_seek_bg" >
+
+            <ProgressBar
+                android:id="@+id/volume_verseekbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="6.5dip"
+                android:layout_height="125dip"
+                android:layout_centerInParent="true"
+                android:progressDrawable="@drawable/ver_seekbar_style"
+                android:thumb="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.letv.sdk.onehundredtv.video.play.view.LetvPlayGestureLayout>

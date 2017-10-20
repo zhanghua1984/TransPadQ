@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<ImageView-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_width="33dp"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:src="@drawable/triangle1"/>-->
+
+        <LinearLayout
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popwindow_background"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/music_sort_time"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="@drawable/popwindow_item_selector"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="11dp"
+                    android:src="@drawable/icon_update_time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/music_popwindow_time"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+
+            <!--<View-->
+            <!--android:layout_width="117dp"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:background="@drawable/dialog_separate_line"/>-->
+
+            <LinearLayout
+                android:id="@+id/music_sort_name"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="@drawable/popwindow_item_selector"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="11dp"
+                    android:src="@drawable/icon_file"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/music_popwindow_name"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<View-->
+        <!--android:layout_width="117dp"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:background="@drawable/dialog_separate_line"/>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="165dp"-->
+        <!--android:layout_height="41dp"-->
+        <!--android:background="#6622ff"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="25dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginLeft="11dp"-->
+        <!--android:src="@drawable/videolist_sort_mins"/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginLeft="12dp"-->
+        <!--android:text="按视频时长"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textSize="13sp"/>-->
+
+
+        <!--</LinearLayout>-->
+        <!--</RelativeLayout>-->
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detailplay_full_controller"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="visible" >
+
+    <!-- 头部 -->
+
+    <include
+        android:id="@+id/full_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/play_full_top"
+        android:gravity="center_vertical" />
+    <!-- 左侧 -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/full_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-2dip"
+            android:background="@drawable/play_controller_left_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <!-- 下载按钮 -->
+
+            <LinearLayout
+                android:id="@+id/full_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="3dip" >
+
+                <ImageView
+                    android:id="@+id/full_download_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dip"
+                    android:layout_gravity="center_horizontal"
+                    android:duplicateParentState="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/play_controller_download" />
+
+                <TextView
+                    android:id="@+id/full_download_text"
+                    style="@style/letv_text_14_ff969696"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dip"
+                    android:text="下载" />
+            </LinearLayout>
+
+            <!-- 收藏按钮 -->
+
+            <LinearLayout
+                android:id="@+id/full_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:paddingBottom="3dip" >
+
+                <ImageView
+                    android:id="@+id/full_favorite_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dip"
+                    android:duplicateParentState="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/play_controller_collect" />
+
+                <TextView
+                    android:id="@+id/full_favorite_text"
+                    style="@style/letv_text_14_ff969696"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dip"
+                    android:text="想看" />
+            </LinearLayout>
+
+            <!-- 分享按钮 -->
+
+
+            <!-- <LinearLayout -->
+            <!-- android:id="@+id/full_share" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:gravity="center" -->
+            <!-- android:orientation="vertical" -->
+            <!-- android:paddingBottom="3dip" > -->
+
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/full_share_img" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginTop="8dip" -->
+            <!-- android:duplicateParentState="true" -->
+            <!-- android:scaleType="centerInside" -->
+            <!-- android:src="@drawable/play_controller_share" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/full_share_text" -->
+            <!-- style="@style/letv_text_14_ff969696" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginTop="3dip" -->
+            <!-- android:text="分享" /> -->
+            <!-- </LinearLayout> -->
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 底部 -->
+
+    <RelativeLayout
+        android:id="@+id/full_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/play_controller_bottom_bg" >
+
+        <RelativeLayout
+            android:id="@+id/full_play_seekbar_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:gravity="center_vertical"
+            android:padding="0dip" >
+
+            <SeekBar
+                android:id="@+id/full_play_seekbar"
+                android:layout_width="fill_parent"
+                android:layout_height="20dip"
+                android:layout_centerVertical="true"
+                android:maxHeight="16dip"
+                android:minHeight="16dip"
+                android:progressDrawable="@drawable/play_controller_progress_style"
+                android:thumb="@drawable/play_controller_player_thumb"
+                android:thumbOffset="0dip" />
+
+            <ImageView
+                android:id="@+id/full_play_skip_begin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/play_skip"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/full_play_skip_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/play_skip"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/full_play_seekbar_layout" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/play_controller_seekbar"
+                android:layout_marginTop="0dip"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/full_hd_layout"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:gravity="center" >
+
+                    <!-- 高清 在com.letv.sdk.baidu.play.localplayer.LocalplayerMediaController中对此RelativeLayout进行操作了，请修改时同步修改此类 -->
+
+                    <Button
+                        android:id="@+id/full_hd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/play_hd_bg"
+                        android:textColor="@color/letv_color_ffffffff"
+                        android:textSize="14sp" 
+                        android:visibility="visible"/>
+
+                    <!-- 在com.letv.sdk.baidu.play.localplayer.LocalplayerMediaController中对此RelativeLayout进行操作了，请修改时同步修改此类 -->
+
+
+                    <!-- DLNA -->
+
+                    <TextView
+                        android:id="@+id/dlna"
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/play_hd_bg"
+                        android:drawableLeft="@drawable/dlna"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="推送"
+                        android:textColor="@color/letv_color_ffffffff"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="2dip"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <!-- 左快退 -->
+
+                    <ImageView
+                        android:id="@+id/full_rewind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dip"
+                        android:src="@drawable/play_controller_left_btn" />
+
+                    <!-- 播放和暂停 -->
+
+                    <include
+                        android:id="@+id/full_play"
+                        layout="@layout/play_full_play" />
+                    <!-- 右快进 -->
+
+                    <ImageView
+                        android:id="@+id/full_forward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dip"
+                        android:src="@drawable/play_controller_right_btn" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4" >
+
+                    <TextView
+                        android:id="@+id/full_progress_text"
+                        style="@style/letv_text_14_ffffffff"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:gravity="right|center_vertical"
+                        android:singleLine="true" />
+
+                    <include
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        layout="@layout/play_full_sound" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 右侧 -->
+
+    <RelativeLayout
+        android:id="@+id/full_right"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/full_content"
+            android:layout_width="240dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-2dip"
+            android:layout_toRightOf="@+id/full_bar"
+            android:background="@drawable/player_episode_content_bg"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <include
+                android:id="@+id/full_content_videos"
+                layout="@layout/detailplay_full_videos"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/full_content_introduction"
+                layout="@layout/detailplay_full_introduction"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/full_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/full_videos_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/play_controller_selection"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/full_introduction_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/play_controller_detail"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/full_loworhigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/player_low_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <!-- 高清 -->
+
+        <TextView
+            android:id="@+id/full_high_text"
+            style="@style/letv_11_54bceb"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <!-- 流畅 -->
+
+        <TextView
+            android:id="@+id/full_low_text"
+            style="@style/letv_11_54bceb"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+
+</RelativeLayout>

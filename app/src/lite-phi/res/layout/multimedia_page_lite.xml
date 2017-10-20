@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <!--<GridView-->
+    <!--android:id="@+id/gv_menu"-->
+    <!--android:layout_width="530dp"-->
+    <!--android:layout_height="215dp"-->
+    <!--android:layout_marginLeft="65dp"-->
+    <!--android:layout_marginRight="65dp"-->
+    <!--android:horizontalSpacing="5dp"-->
+    <!--android:numColumns="3"-->
+    <!--android:scrollbars="none"-->
+    <!--android:verticalSpacing="18dp" />-->
+    <GridView
+        android:id="@+id/gv_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="215dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:gravity="center_horizontal"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="18dp" />
+
+    <ImageView
+        android:id="@+id/rl_refresh"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/refresh_background"
+        android:padding="4dp"
+        android:src="@drawable/tpq_media_refresh" />
+</RelativeLayout>

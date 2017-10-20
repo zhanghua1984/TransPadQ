@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/appItem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rlApp"
+        android:layout_width="52dip"
+        android:layout_height="55dip">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/item_appImage"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/shape"
+            android:src="@drawable/icon_default"
+            app:riv_corner_radius="5dp"/>
+
+        <ImageView
+            android:id="@+id/item_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"
+            android:src="@drawable/item_close_button"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/item_appName"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_appImage"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

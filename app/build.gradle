@@ -1,0 +1,440 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+
+    defaultConfig {
+        applicationId "cn.transpad.transpadui.tpq"
+        minSdkVersion 10
+        targetSdkVersion 19
+        versionCode 3
+        versionName "1.1"
+        multiDexEnabled true
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+        htmlReport false
+        xmlReport false
+    }
+    //签名
+    signingConfigs {
+        produceSignConfig {
+            keyAlias 'utp'
+            keyPassword 'transpad08'
+            storeFile file('android.keystore')
+            storePassword 'cmit0813'
+        }
+        foneSignConfig {
+            keyAlias 'android.keystore'
+            keyPassword 'fone16mm'
+            storeFile file('fone.keystore')
+            storePassword 'fone16mm'
+        }
+    }
+    sourceSets {
+        main {
+            manifest {
+                srcFile 'src/main/AndroidManifest.xml'
+            }
+            java {
+                srcDir 'src/main/java'
+            }
+            res {
+                srcDir 'src/main/res'
+            }
+            assets {
+                srcDir 'src/main/assets'
+            }
+            aidl {
+                srcDir 'src/main/aidl'
+            }
+            jniLibs.srcDirs = ['jniLibs']
+        }
+        lite_official {
+            java {
+                srcDir 'src/lite/java'
+            }
+            res {
+                srcDir 'src/lite/res'
+            }
+            manifest {
+                srcFile 'src/lite/AndroidManifest.xml'
+            }
+        }
+        lite_aoc_official {
+            java {
+                srcDir 'src/lite-aoc/java'
+            }
+            res {
+                srcDir 'src/lite-aoc/res'
+            }
+            manifest {
+                srcFile 'src/lite-aoc/AndroidManifest.xml'
+            }
+        }
+        lite_phi_official {
+            java {
+                srcDir 'src/lite-phi/java'
+            }
+            res {
+                srcDir 'src/lite-phi/res'
+            }
+            manifest {
+                srcFile 'src/lite-phi/AndroidManifest.xml'
+            }
+        }
+        aoc_official {
+            java {
+                srcDir 'src/aoc/java'
+            }
+            res {
+                srcDir 'src/aoc/res'
+            }
+            manifest {
+                srcFile 'src/aoc/AndroidManifest.xml'
+            }
+        }
+        philips_official {
+            java {
+                srcDir 'src/philips/java'
+            }
+            res {
+                srcDir 'src/philips/res'
+            }
+            manifest {
+                srcFile 'src/philips/AndroidManifest.xml'
+            }
+        }
+        tpq_official {
+            java {
+                srcDir 'src/tpq/java'
+            }
+            manifest {
+                srcFile 'src/tpq/AndroidManifest.xml'
+            }
+        }
+
+        tpq_100tv_official {
+            java {
+                srcDir 'src/100tv/java'
+            }
+            res {
+                srcDir 'src/100tv/res'
+            }
+            manifest {
+                srcFile 'src/100tv/AndroidManifest.xml'
+            }
+        }
+
+        tpq_100tv_anzhi {
+            java {
+                srcDir 'src/100tv-anzhi/java'
+            }
+            res {
+                srcDir 'src/100tv-anzhi/res'
+            }
+            manifest {
+                srcFile 'src/100tv/AndroidManifestAnzhi.xml'
+            }
+        }
+
+        tpq_100tv_360 {
+            java {
+                srcDir 'src/100tv/java'
+            }
+            res {
+                srcDir 'src/100tv/res'
+            }
+            manifest {
+                srcFile 'src/100tv/AndroidManifest360.xml'
+            }
+        }
+
+        tpq_100tv_yingyongbao {
+            java {
+                srcDir 'src/100tv/java'
+            }
+            res {
+                srcDir 'src/100tv/res'
+            }
+            manifest {
+                srcFile 'src/100tv/AndroidManifestYingyongbao.xml'
+            }
+        }
+
+        tpq_100tv_baidu {
+            java {
+                srcDir 'src/100tv/java'
+            }
+            res {
+                srcDir 'src/100tv/res'
+            }
+            manifest {
+                srcFile 'src/100tv/AndroidManifestBaidu.xml'
+            }
+        }
+
+        tpq_100tv_xiaomi {
+            java {
+                srcDir 'src/100tv/java'
+            }
+            res {
+                srcDir 'src/100tv/res'
+            }
+            manifest {
+                srcFile 'src/100tv/AndroidManifestXiaomi.xml'
+            }
+        }
+
+        tpq_100tv_oppo {
+            java {
+                srcDir 'src/100tv/java'
+            }
+            res {
+                srcDir 'src/100tv/res'
+            }
+            manifest {
+                srcFile 'src/100tv/AndroidManifestOppo.xml'
+            }
+        }
+
+        tpq_100tv_huawei {
+            java {
+                srcDir 'src/100tv/java'
+            }
+            res {
+                srcDir 'src/100tv/res'
+            }
+            manifest {
+                srcFile 'src/100tv/AndroidManifestHuawei.xml'
+            }
+        }
+    }
+
+    buildTypes {
+        //混淆版本9000
+        release_obfuscation {
+            minifyEnabled true
+            debuggable false
+            zipAlignEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.produceSignConfig
+        }
+
+        //未混淆版本9000
+        release {
+            minifyEnabled false
+            zipAlignEnabled true
+            debuggable false
+            signingConfig signingConfigs.produceSignConfig
+        }
+        //未混淆版本9000
+        debug {
+            minifyEnabled false
+            zipAlignEnabled false
+            debuggable true
+            signingConfig signingConfigs.produceSignConfig
+        }
+
+        release_fone {
+            minifyEnabled false
+            zipAlignEnabled true
+            debuggable false
+            signingConfig signingConfigs.foneSignConfig
+        }
+    }
+    productFlavors {
+        //official v3 正式版
+//            tpq_official_v3 {
+//                versionName baseVersionName
+//                buildConfigField 'String', MAIN_CHANNEL_CODE, official_v4_8000.mainChannelCode
+//                //meta-data渠道号
+//                //manifestPlaceholders = [CHANNEL_NAME: official_v4_8000.channelCode]
+//            }
+        //official v4 正式版
+        tpq_official {
+            def tpq_official_v4 = rootProject.ext.tpq_official_v4;
+            versionName tpq_official_v4.versionName
+            versionCode tpq_official_v4.versionCode
+            applicationId tpq_official_v4.applicationId
+            buildConfigField 'String', CHANNEL_CODE, tpq_official_v4.channelCode
+            buildConfigField 'String', SERVER, tpq_official_v4.server
+        }
+        //official v4 正式版
+        aoc_official {
+            def aoc_official_v4 = rootProject.ext.aoc_official_v4;
+            versionName aoc_official_v4.versionName
+            versionCode aoc_official_v4.versionCode
+            applicationId aoc_official_v4.applicationId
+            buildConfigField 'String', CHANNEL_CODE, aoc_official_v4.channelCode
+            buildConfigField 'String', SERVER, aoc_official_v4.server
+        }
+        //official v4 正式版
+        philips_official {
+            def philips_official_v4 = rootProject.ext.philips_official_v4;
+            versionName philips_official_v4.versionName
+            versionCode philips_official_v4.versionCode
+            applicationId philips_official_v4.applicationId
+            buildConfigField 'String', CHANNEL_CODE, philips_official_v4.channelCode
+            buildConfigField 'String', SERVER, philips_official_v4.server
+        }
+        //lite v4 正式版
+        lite_official {
+            def lite_official_v4 = rootProject.ext.lite_official_v4;
+            versionName lite_official_v4.versionName
+            versionCode lite_official_v4.versionCode
+            applicationId lite_official_v4.applicationId
+            buildConfigField 'String', CHANNEL_CODE, lite_official_v4.channelCode
+            buildConfigField 'String', SERVER, lite_official_v4.server
+        }
+        //lite v4 正式版
+        lite_aoc_official {
+            def lite_aoc_official_v4 = rootProject.ext.lite_aoc_official_v4;
+            versionName lite_aoc_official_v4.versionName
+            versionCode lite_aoc_official_v4.versionCode
+            applicationId lite_aoc_official_v4.applicationId
+            buildConfigField 'String', CHANNEL_CODE, lite_aoc_official_v4.channelCode
+            buildConfigField 'String', SERVER, lite_aoc_official_v4.server
+        }
+
+        //lite v4 正式版
+        lite_phi_official {
+            def lite_phi_official_v4 = rootProject.ext.lite_phi_official_v4;
+            versionName lite_phi_official_v4.versionName
+            versionCode lite_phi_official_v4.versionCode
+            applicationId lite_phi_official_v4.applicationId
+            buildConfigField 'String', CHANNEL_CODE, lite_phi_official_v4.channelCode
+            buildConfigField 'String', SERVER, lite_phi_official_v4.server
+        }
+
+        //100tv传送宝 官网版
+        tpq_100tv_official {
+            def tpq_100tv_official = rootProject.ext.tpq_100tv_official;
+            versionName tpq_100tv_official.versionName
+            versionCode tpq_100tv_official.versionCode
+            applicationId tpq_100tv_official.applicationId
+            buildConfigField 'String', CHANNEL_CODE, tpq_100tv_official.channelCode
+            buildConfigField 'String', SERVER, tpq_100tv_official.server
+        }
+        //100tv传送宝 安智
+        tpq_100tv_anzhi {
+            def tpq_100tv = rootProject.ext.tpq_100tv_anzhi;
+            versionName tpq_100tv.versionName
+            versionCode tpq_100tv.versionCode
+            applicationId tpq_100tv.applicationId
+            buildConfigField 'String', CHANNEL_CODE, tpq_100tv.channelCode
+            buildConfigField 'String', SERVER, tpq_100tv.server
+        }
+
+        //100tv传送宝 360
+        tpq_100tv_360 {
+            def tpq_100tv = rootProject.ext.tpq_100tv_360;
+            versionName tpq_100tv.versionName
+            versionCode tpq_100tv.versionCode
+            applicationId tpq_100tv.applicationId
+            buildConfigField 'String', CHANNEL_CODE, tpq_100tv.channelCode
+            buildConfigField 'String', SERVER, tpq_100tv.server
+        }
+
+        //100tv传送宝 应用宝
+        tpq_100tv_yingyongbao {
+            def tpq_100tv = rootProject.ext.tpq_100tv_yingyongbao;
+            versionName tpq_100tv.versionName
+            versionCode tpq_100tv.versionCode
+            applicationId tpq_100tv.applicationId
+            buildConfigField 'String', CHANNEL_CODE, tpq_100tv.channelCode
+            buildConfigField 'String', SERVER, tpq_100tv.server
+        }
+
+        //100tv传送宝 百度
+        tpq_100tv_baidu {
+            def tpq_100tv = rootProject.ext.tpq_100tv_baidu;
+            versionName tpq_100tv.versionName
+            versionCode tpq_100tv.versionCode
+            applicationId tpq_100tv.applicationId
+            buildConfigField 'String', CHANNEL_CODE, tpq_100tv.channelCode
+            buildConfigField 'String', SERVER, tpq_100tv.server
+        }
+
+        //100tv传送宝 小米
+        tpq_100tv_xiaomi {
+            def tpq_100tv = rootProject.ext.tpq_100tv_xiaomi;
+            versionName tpq_100tv.versionName
+            versionCode tpq_100tv.versionCode
+            applicationId tpq_100tv.applicationId
+            buildConfigField 'String', CHANNEL_CODE, tpq_100tv.channelCode
+            buildConfigField 'String', SERVER, tpq_100tv.server
+        }
+
+        //100tv传送宝 oppo
+        tpq_100tv_oppo {
+            def tpq_100tv = rootProject.ext.tpq_100tv_oppo;
+            versionName tpq_100tv.versionName
+            versionCode tpq_100tv.versionCode
+            applicationId tpq_100tv.applicationId
+            buildConfigField 'String', CHANNEL_CODE, tpq_100tv.channelCode
+            buildConfigField 'String', SERVER, tpq_100tv.server
+        }
+
+        //100tv传送宝 华为
+        tpq_100tv_huawei {
+            def tpq_100tv = rootProject.ext.tpq_100tv_huawei;
+            versionName tpq_100tv.versionName
+            versionCode tpq_100tv.versionCode
+            applicationId tpq_100tv.applicationId
+            buildConfigField 'String', CHANNEL_CODE, tpq_100tv.channelCode
+            buildConfigField 'String', SERVER, tpq_100tv.server
+        }
+    }
+
+}
+
+dependencies {
+
+    //compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'com.makeramen:roundedimageview:2.0.1'
+    compile 'org:jaudiotagger:2.0.3'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile project(':pageddragdropgrid')
+    compile project(':LibCore')
+    compile 'com.android.support:support-v4:22.0.0'
+    compile 'com.android.support:recyclerview-v7:22.0.0'
+    compile project(':stackblurlib')
+    compile 'com.squareup.okhttp:okhttp:2.3.0'
+    compile project(':LibLetv')
+    compile 'com.android.support:multidex:1.0.0'
+    compile files('libs/usc.jar')
+    compile files('libs/PhotoView.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/retrofit-1.9.0.jar')
+    compile files('libs/simple-xml-2.7.1.jar')
+    compile files('libs/SohuPlayerExtend_3.1.0_130023_20140903133321.jar')
+    aoc_officialCompile files('libs/LetvAndroidClient_5.0_20150107_aoc.jar')
+    philips_officialCompile files('libs/LetvAndroidClient_5.0_20150107_philips.jar')
+    tpq_officialCompile files('libs/LetvAndroidClient_5.0_20150107_tpq.jar')
+    lite_officialCompile files('libs/LetvAndroidClient_5.0_20150107_lite.jar')
+    lite_aoc_officialCompile files('libs/LetvAndroidClient_5.0_20150107_lite_aoc.jar')
+    lite_phi_officialCompile files('libs/LetvAndroidClient_5.0_20150107_philips.jar')
+    tpq_100tv_officialCompile files('libs/LetvAndroidClient_5.0_20150107_100tv.jar')
+    tpq_100tv_anzhiCompile files('libs/LetvAndroidClient_5.0_20150107_100tv.jar')
+    tpq_100tv_360Compile files('libs/LetvAndroidClient_5.0_20150107_100tv.jar')
+    tpq_100tv_yingyongbaoCompile files('libs/LetvAndroidClient_5.0_20150107_100tv.jar')
+    tpq_100tv_baiduCompile files('libs/LetvAndroidClient_5.0_20150107_100tv.jar')
+    tpq_100tv_xiaomiCompile files('libs/LetvAndroidClient_5.0_20150107_100tv.jar')
+    tpq_100tv_oppoCompile files('libs/LetvAndroidClient_5.0_20150107_100tv.jar')
+    tpq_100tv_huaweiCompile files('libs/LetvAndroidClient_5.0_20150107_100tv.jar')
+    tpq_100tv_baiduCompile files('libs/BDAutoUpdate_APPX_SDK_20150826.jar')
+    tpq_100tv_baiduCompile files('libs/android_api_3.6.9.3.jar')
+    tpq_100tv_baiduCompile files('libs/need_lib.jar')
+    tpq_100tv_baiduCompile files('libs/patchupdate.jar')
+    compile project(':LibDLNA')
+    compile 'cn.trans.core:TransCore:2.1.31@aar'
+}

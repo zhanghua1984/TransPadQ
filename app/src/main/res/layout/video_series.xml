@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_fpg"
+    android:background="@color/transparent">
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="53dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rv_hor_title"
+        android:layout_width="357dp"
+        android:layout_height="31dp"
+        android:scrollbars="none">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <GridView
+        android:layout_width="480dp"
+        android:id="@+id/gv_list"
+        android:layout_marginTop="29dp"
+        android:layout_centerHorizontal="true"
+        android:verticalSpacing="11dp"
+        android:visibility="gone"
+        android:horizontalSpacing="13dp"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:layout_below="@+id/rv_hor_title"
+        android:layout_height="195dp"
+        >
+    </GridView>
+    <GridView
+        android:layout_width="480dp"
+        android:id="@+id/gv_list2"
+        android:layout_below="@+id/rv_hor_title"
+        android:layout_marginTop="29dp"
+        android:layout_centerHorizontal="true"
+        android:verticalSpacing="11dp"
+        android:horizontalSpacing="13dp"
+        android:numColumns="5"
+        android:visibility="gone"
+        android:scrollbars="none"
+        android:layout_height="195dp"
+        >
+    </GridView>
+</RelativeLayout>

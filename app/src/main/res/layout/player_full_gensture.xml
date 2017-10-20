@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/video_full_title_bg" >
+
+    <LinearLayout
+        android:id="@+id/video_full_vol_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/video_full_vol_icon"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/full_icon_gesture_sound" />
+
+        <TextView
+            android:id="@+id/video_full_vol_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="52%"
+            android:textColor="@color/video_info_tab_line"
+            android:textSize="@dimen/video_fullscreen_gensture_textsize" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/video_full_postion_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/video_info_tab_line"
+        android:text="00:39/10:25"
+        android:visibility="gone"
+        android:textSize="@dimen/video_fullscreen_gensture_textsize" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@drawable/drag_no_app_bg"
+    android:gravity="center"
+    android:minHeight="50dp"
+    android:minWidth="468dp"
+    android:layout_width="468dp"
+    android:layout_height="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/drag_app_no_app_text_start"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/drag_app_no_app_text_middle"
+        android:textColor="#ff7500"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/drag_app_no_app_text_end"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        />
+
+</LinearLayout>

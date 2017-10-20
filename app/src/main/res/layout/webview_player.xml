@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <WebView
+        android:id="@+id/webview_player"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:id="@+id/webview_player_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/video_full_title_bg" >
+
+        <Button
+            android:id="@+id/player_back_webview"
+            android:layout_width="28dp"
+            android:layout_height="36dp"
+            android:background="@drawable/play_back" />
+
+        <TextView
+            android:id="@+id/player_title_webview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textSize="@dimen/video_title_bar_small_title_textsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hdplay_layout"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:background="#ff8400"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/webview_play_icon" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/hd_player"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <cn.transpad.transpadui.view.ColorBallProgressView
+        android:id="@+id/web_loading"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

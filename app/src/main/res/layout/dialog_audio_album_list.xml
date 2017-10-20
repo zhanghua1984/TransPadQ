@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    android:layout_width="216dp"
+    android:layout_height="236dip">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/dialog_audio_list_title_text"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/dialog_title"
+        android:paddingBottom="13dip"
+        android:paddingTop="13dip" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvAudioList"
+        android:layout_width="match_parent"
+        android:layout_height="145dip"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button_layout"
+        android:visibility="visible"
+        android:layout_height="40dp">
+
+        <Button
+            android:id="@+id/btnSure"
+            android:layout_weight="1"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/default_shade_button_orange"
+            android:text="@string/version_dialog_ok"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/default_shade_button_orange"
+            android:text="@string/version_dialog_cancel"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/play_controller_top_bg"
+    android:gravity="center_vertical" >
+
+    <ImageView
+        android:id="@+id/full_back"
+        style="@style/letv_text_11_ffdfdfdf"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:paddingLeft="9dip"
+        android:paddingRight="9dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/back_white_selecter" />
+
+    <TextView
+        android:id="@+id/full_title"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" />
+
+    <Button
+        android:id="@+id/full_mletv"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/play_hd_bg"
+        android:text="来源:乐视影视"
+        android:textColor="@color/letv_color_ffffffff"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/full_net"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dip"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/full_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dip"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/full_time"
+        style="@style/letv_text_14_ffffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7dip"
+        android:textStyle="bold" />
+
+</LinearLayout>

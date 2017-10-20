@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <GridView
+        android:id="@+id/episode_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="7dip"
+        android:layout_marginRight="7dip"
+        android:fadingEdge="none"
+        android:gravity="center"
+        android:horizontalSpacing="12dip"
+        android:listSelector="#00000000"
+        android:numColumns="4"
+        android:paddingBottom="16dip"
+        android:paddingTop="16dip"
+        android:verticalSpacing="16dip"
+        android:visibility="gone" />
+
+    <com.letv.sdk.onehundredtv.video.play.view.LetvExpandableListView
+        android:id="@+id/episode_expandable"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/letv_color_00000000"
+        android:drawingCacheQuality="auto"
+        android:fadingEdge="none"
+        android:groupIndicator="@null"
+        android:listSelector="@color/letv_color_00000000"
+        android:scrollingCache="true"
+        android:visibility="visible" />
+
+    <ListView
+        android:id="@+id/episode_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#FF3E3F41"
+        android:dividerHeight="1dip"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent"
+        android:visibility="gone" />
+
+</RelativeLayout>

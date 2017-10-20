@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rlAlbumItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvAlbumName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dip"
+        android:layout_marginBottom="18dip"
+        android:layout_marginLeft="6dip"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="@string/odeum_loading"
+        android:textSize="15sp"/>
+
+    <CheckBox
+        android:id="@+id/cbAlbumChoise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:button="@drawable/odeum_audio_album_check_button_selector"
+        android:layout_marginRight="18dp"
+        android:visibility="gone"/>
+
+    <!--分割线-->
+    <View
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginLeft="6dip"
+        android:layout_below="@id/tvAlbumName"
+        android:background="@color/line_color"
+        />
+</RelativeLayout>

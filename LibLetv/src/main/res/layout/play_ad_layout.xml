@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@color/black">
+	
+    <VideoView 
+	    android:id="@+id/play_ad_videoview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_centerInParent="true" />
+    
+    <com.letv.cache.view.LetvImageView
+	    android:id="@+id/play_ad_img"
+	    android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+	    android:scaleType="centerCrop"
+	    android:layout_centerInParent="true"/>
+    
+    <ImageView 
+	    android:id="@+id/play_ad_pause_del"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/ad_pause_del"
+	    android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+    
+    <TextView
+        android:id="@+id/play_ad_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dip"
+        android:layout_marginRight="20dip"
+        android:textSize="16sp"
+        android:textColor="#FFececec"/>
+    
+    <LinearLayout android:id="@+id/play_ad_loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+        
+    </LinearLayout>
+    	
+</RelativeLayout>

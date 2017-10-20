@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ImageView-->
+    <!--android:id="@+id/music_media_back"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="53dp"-->
+    <!--android:layout_marginBottom="15dp"-->
+    <!--android:layout_marginLeft="75dp"-->
+    <!--android:layout_marginTop="21dp"-->
+    <!--android:src="@drawable/media_back"/>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/music_list_sort"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="53dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="22dp"-->
+    <!--android:layout_marginTop="22dp"-->
+    <!--android:src="@drawable/videolist_sort"/>-->
+
+    <RelativeLayout
+        android:id="@+id/music_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#7a000000">
+
+        <LinearLayout
+            android:id="@+id/music_media_back"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/tpq_homepage_button_selector"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/tpq_media_back" />
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/music_back"
+                android:textSize="11sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal"
+                />
+                -->
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/tp" />
+
+        <LinearLayout
+            android:id="@+id/music_list_sort"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/tpq_homepage_button_selector"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_sort" />
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/music_sort"
+                android:textSize="11sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal"
+                />
+                -->
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/music_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="228dp"
+        android:layout_below="@id/music_title"
+        android:layout_marginLeft="54dp"
+        android:layout_marginRight="54dp"
+        android:layout_marginTop="2dp"
+        android:divider="@drawable/line"
+        android:listSelector="@android:color/transparent"
+        android:overScrollFooter="@color/transparent"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/music_choose_textview"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="16dp"-->
+    <!--android:layout_marginLeft="77dp"-->
+    <!--android:layout_marginRight="77dp"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:text="@string/music_choose"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:textSize="17dp"/>-->
+    <ToggleButton
+        android:id="@+id/music_choose_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/music_playlist"
+        android:layout_marginBottom="26dp"
+        android:layout_marginRight="54dp"
+        android:background="@drawable/btn_m_d"
+        android:checked="false"
+        android:textColor="#ffffff"
+        android:textOff="@string/music_delete"
+        android:textOn="@string/music_delete_ok"
+        android:textSize="12sp" />
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/music_choose_left"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginBottom="17dp"-->
+    <!--android:layout_toLeftOf="@id/music_choose_button"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="invisible">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/music_add_image"-->
+    <!--android:layout_width="19dp"-->
+    <!--android:layout_height="19dp"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:src="@drawable/videolist_add"-->
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/music_add_text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/music_add"-->
+    <!--android:textColor="#ff8400"-->
+    <!--android:textSize="13sp"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/music_choose_right"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginBottom="17dp"-->
+    <!--android:layout_toRightOf="@id/music_choose_button"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="invisible">-->
+
+
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="19dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="19dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="center_horizontal"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:src="@drawable/videolist_delete"/>&ndash;&gt;-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/music_delete"-->
+    <!--android:textColor="#ff8400"-->
+    <!--android:textSize="17sp"/>-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

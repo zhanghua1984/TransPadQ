@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/music_playlist_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <TextView
+            android:id="@+id/music_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            />
+
+        <ImageView
+            android:id="@+id/music_pause"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/musiclist_pause"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/music_play"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/musiclist_play"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/music_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="19dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/media_choose"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    android:layout_width="238dp"
+    android:minWidth="238dp"
+    android:maxWidth="238dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/dialog_title" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/dialog_content"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button_layout"
+        android:visibility="gone"
+        android:layout_height="40dp">
+
+        <Button
+            android:id="@+id/dialog_button_left"
+            android:layout_weight="1"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/default_shade_button_orange"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/dialog_button_right"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/default_shade_button_orange"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

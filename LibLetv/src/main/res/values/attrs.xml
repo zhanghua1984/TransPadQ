@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="adview">
+        <attr name="autoLoad" format="boolean" />
+        <attr name="keepSize" format="boolean" />
+        <attr name="canClose" format="boolean" />
+        <attr name="autoClick" format="boolean" />
+        <attr name="autoShow" format="boolean" />
+        <attr name="cid" format="string" />
+        <attr name="pid" format="string" />
+        <attr name="clickstatistics" format="string" />
+        <attr name="showstatistics" format="string" />
+        <attr name="uid" format="string" />
+        <attr name="adType" >
+            <enum name="begin" value="1" />
+            <enum name="focus" value="2" />
+            <enum name="focus2" value="3" />
+            <enum name="banner" value="4" />
+            <enum name="fullback" value="5" />
+        </attr>
+    </declare-styleable>
+
+</resources>

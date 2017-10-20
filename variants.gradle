@@ -1,0 +1,103 @@
+ext {
+    CHANNEL_CODE = 'CHANNEL_CODE'
+    SERVER = 'SERVER'
+
+    tpq_official_v4 = [
+            versionName: '1.2',
+            versionCode: 3,
+            channelCode: "\"13.2.26.3425.9000.9000001\"",
+            applicationId  : "cn.transpad.transpadui.tpq",
+            server:"\"http://api.transpad.cn/vi/player\""
+    ]
+    aoc_official_v4 = [
+            versionName: '1.2',
+            versionCode: 3,
+            channelCode: "\"14.1.26.3425.9000.9000001\"",
+            applicationId  : "cn.transpad.transpadui.aoc",
+            server:"\"http://api.transpad.cn/vi/player\""
+    ]
+    philips_official_v4 = [
+            versionName: '1.2',
+            versionCode: 3,
+            channelCode: "\"16.1.26.3425.9000.9000001\"",
+            applicationId  : "cn.transpad.transpadui.philips",
+            server:"\"http://api.transpad.cn/vi/player\""
+    ]
+    lite_official_v4 = [
+            versionName: '1.2',
+            versionCode: 3,
+            channelCode: "\"17.1.26.3425.9000.9000001\"",
+            applicationId  : "cn.transpad.transpadui.lite",
+            server:"\"http://api.transpad.cn/vi/player\""
+    ]
+    lite_aoc_official_v4 = [
+            versionName: '1.2',
+            versionCode: 3,
+            channelCode: "\"18.1.26.3425.9000.9000001\"",
+            applicationId  : "cn.transpad.transpadui.lite.aoc",
+            server:"\"http://api.transpad.cn/vi/player\""
+    ]
+    lite_phi_official_v4 = [
+            versionName: '1.3',
+            versionCode: 4,
+            channelCode: "\"16.1.26.3425.9000.9000001\"",
+            applicationId  : "cn.transpad.transpadui.philips",
+            server:"\"http://api.transpad.cn/vi/player\""
+    ]
+    tpq_100tv_official = [
+            versionName: '5.0',
+            versionCode: 212,
+            channelCode: "\"10.52.7.3245.9000.9000001\"",
+            applicationId  : "com.fone.player",
+            server:"\"http://api.transpad.cn/vi/player\""
+    ]
+    tpq_100tv_anzhi = [
+            versionName: '5.0',
+            versionCode: 212,
+            channelCode: "\"10.52.7.3245.9001.9001023\"",
+            applicationId  : "com.fone.player",
+            server:"\"http://api.transpad.cn/vi/player\""
+    ]
+    tpq_100tv_360 = [
+            versionName: '5.0',
+            versionCode: 212,
+            channelCode: "\"10.52.7.3245.9001.9001049\"",
+            applicationId  : "com.fone.player",
+            server:"\"http://api.transpad.cn/vi/player\""
+    ]
+    tpq_100tv_yingyongbao = [
+            versionName: '5.0',
+            versionCode: 212,
+            channelCode: "\"10.52.7.3245.9001.9001064\"",
+            applicationId  : "com.fone.player",
+            server:"\"http://api.transpad.cn/vi/player\""
+    ]
+    tpq_100tv_baidu = [
+            versionName: '5.0',
+            versionCode: 212,
+            channelCode: "\"10.52.7.3245.9001.9001138\"",
+            applicationId  : "com.fone.player",
+            server:"\"http://api.transpad.cn/vi/player\""
+    ]
+    tpq_100tv_xiaomi = [
+            versionName: '5.0',
+            versionCode: 212,
+            channelCode: "\"10.52.7.3245.9001.9001182\"",
+            applicationId  : "com.fone.player",
+            server:"\"http://api.transpad.cn/vi/player\""
+    ]
+    tpq_100tv_oppo = [
+            versionName: '5.0',
+            versionCode: 212,
+            channelCode: "\"10.52.7.3245.9001.9001056\"",
+            applicationId  : "com.fone.player",
+            server:"\"http://api.transpad.cn/vi/player\""
+    ]
+    tpq_100tv_huawei = [
+            versionName: '5.0',
+            versionCode: 212,
+            channelCode: "\"10.52.7.3245.9001.9001057\"",
+            applicationId  : "com.fone.player",
+            server:"\"http://api.transpad.cn/vi/player\""
+    ]
+}

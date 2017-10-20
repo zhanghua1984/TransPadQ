@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg"
+        android:gravity="center"/>
+    <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+	    <WebView
+	        android:id="@+id/webView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" 
+	        android:layout_gravity="center"
+	        android:background="@color/transparent"/> 	        
+	    <TextView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="30dip"
+	        android:id="@+id/web_address"
+	        android:singleLine="true"
+	        android:gravity="center_vertical"
+	        android:background="#99000000"
+	        android:visibility="gone"/> 
+        <ProgressBar
+            android:id="@+id/loading_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="3dip"
+            android:layout_gravity="top"
+            android:progressDrawable="@drawable/webview_progress_style"
+            android:thumb="@null" 
+            android:max="100"/>	          
+    </FrameLayout>
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dip"
+        android:paddingRight="14dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:background="@drawable/web_bottom_bg">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/back"
+            android:src="@drawable/web_back_button"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forward"
+            android:layout_toRightOf="@id/back"
+            android:layout_marginLeft="30dip"
+            android:src="@drawable/web_forward_button"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/refresh"
+            android:src="@drawable/web_reflush_button"/>
+    </RelativeLayout>
+</LinearLayout>

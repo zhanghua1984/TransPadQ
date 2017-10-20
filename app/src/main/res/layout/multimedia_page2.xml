@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/video_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#7a000000">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:background="@drawable/tpq_homepage_button_selector"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/tpq_media_back"/>
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/music_back"
+                android:textSize="11sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal"
+                />
+                -->
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tp"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:id="@+id/ll_sort"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tpq_homepage_button_selector"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_sort"/>
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/music_sort"
+                android:textSize="11sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal"
+                />
+                -->
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <GridView
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gv_menu"
+        android:layout_below="@+id/video_title"
+        android:layout_width="480dp"
+        android:layout_height="200dp"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="13dp"></GridView>
+    <ToggleButton
+        android:id="@+id/video_choose_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gv_menu"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="54dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/btn_m_d"
+        android:textColor="#ffffff"
+        android:checked="false"
+        android:textOn="@string/music_delete_ok"
+        android:textOff="@string/music_delete"
+        android:textSize="12sp"/>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="50dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/media_back" />
+    <TextView
+        android:id="@+id/tv_title_name"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        />
+    <cn.transpad.transpadui.view.PullToRefreshLayout
+        android:layout_below="@+id/iv_back"
+        android:id="@+id/refresh_view"
+        android:layout_width="480dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_height="195dp">
+
+        <include layout="@layout/refresh_head" />
+        <!-- 支持所有实现Pullable接口的View -->
+        <cn.transpad.transpadui.view.PullableGridView
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="90dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="8dp" />
+
+        <include layout="@layout/load_more" />
+    </cn.transpad.transpadui.view.PullToRefreshLayout>
+</RelativeLayout>

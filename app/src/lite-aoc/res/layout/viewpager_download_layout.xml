@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/download_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#7a000000">
+
+        <LinearLayout
+            android:id="@+id/app_back"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/tpq_homepage_button_selector"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/tpq_media_back" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/title_all"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="60dp">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/title_all_text"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="29dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/viewpager_title_All"-->
+            <!--android:textColor="@color/main_color"-->
+            <!--android:textSize="@dimen/all_app_title" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/title_all_underline"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:layout_alignLeft="@id/title_all_text"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignRight="@id/title_all_text"-->
+            <!--android:src="@drawable/title_selected_underline" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/title_auto"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/title_auto_text"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="29dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/viewpager_title_recommend"-->
+            <!--android:textColor="@color/main_color"-->
+            <!--android:textSize="@dimen/all_app_title" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/title_auto_underline"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:layout_alignLeft="@id/title_auto_text"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignRight="@id/title_auto_text"-->
+            <!--android:src="@drawable/title_selected_underline" />-->
+            <!--</RelativeLayout>-->
+
+            <RelativeLayout
+                android:id="@+id/title_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title_download_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/viewpager_title_download"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/all_app_title" />
+
+                <ImageView
+                    android:id="@+id/title_download_underline"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignLeft="@id/title_download_text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@id/title_download_text"
+                    android:src="@drawable/title_selected_underline" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/download_listView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:divider="@drawable/line"
+        android:listSelector="@color/transparent"
+        android:overScrollFooter="@color/transparent"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</LinearLayout>

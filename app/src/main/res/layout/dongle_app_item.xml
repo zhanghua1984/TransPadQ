@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/application_image"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            app:riv_corner_radius="5dp"
+            app:riv_mutate_background="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_launcher"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:id="@+id/application_image_mask"
+            android:layout_width="54dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="54dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/myapp_download"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/app_download_icon"
+                />
+
+        </RelativeLayout>
+
+        <!--<ImageView-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:src="@drawable/myapp_download"-->
+            <!--android:layout_alignBottom="@id/application_image"-->
+            <!--android:layout_alignRight="@id/application_image"-->
+            <!--android:id="@+id/app_download_icon"-->
+            <!--/>-->
+
+        <ImageView
+            android:id="@+id/application_frame"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/item_download_frame"
+            android:visibility="invisible" />
+
+        <cn.transpad.transpadui.view.NumberCircleProgressBar
+            android:id="@+id/application_progress"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            custom:max="100"
+            custom:progress="0"
+            custom:progress_circle_radius="17dp"
+            custom:progress_fill_mode="rotate"
+            custom:progress_reached_color="#bf000000"
+            custom:progress_text_color="#00000000"
+            custom:progress_text_size="15sp"
+            custom:progress_text_visibility="visible"
+            custom:progress_unreached_color="#00000000" />
+
+        <TextView
+            android:id="@+id/application_name"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/application_image"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

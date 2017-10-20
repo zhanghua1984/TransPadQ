@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="drag_handle" type="id"/>
+    <item name="click_remove" type="id"/>
+    <item name="default_image_url" type="id"/>
+    <item name="drawable_task" type="id"/>
+
+</resources>

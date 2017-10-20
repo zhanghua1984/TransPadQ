@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="64dp"
+    android:background="#e8ebee" >
+
+    <ImageView
+        android:id="@+id/notification_icon_iv"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_launcher" />
+
+    
+    <RelativeLayout 
+        android:id="@+id/notification_title_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@id/notification_icon_iv">
+        
+      <TextView
+        android:id="@+id/notification_title_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/notification_time"
+        android:lines="1"
+        android:text="100tv影视"
+        android:ellipsize="end" 
+        android:textColor="#46494b"
+        android:textSize="18sp" />
+      
+      <TextView
+        android:id="@+id/notification_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" 
+        android:text="16:30"
+        android:layout_marginRight="5dp"
+        android:textColor="#aaabaf"
+        android:textSize="13sp"/>
+        
+    </RelativeLayout>
+    
+
+    <TextView
+        android:id="@+id/notification_content_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/notification_title_rl"
+        android:layout_below="@id/notification_title_rl"
+        android:layout_alignParentRight="true"
+        android:text="别说我不负责任,我可告诉你有奖品了!"
+        android:lines="2"
+        android:ellipsize="end" 
+        android:textColor="#606162"
+        android:textSize="13sp" />
+
+</RelativeLayout>

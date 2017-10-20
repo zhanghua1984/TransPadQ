@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@null" >
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/no_play_error"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/no_play_error_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/not_play" />
+
+        <TextView
+            style="@style/letv_text_13_ffffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/no_play_error_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dip"
+            android:text="抱歉，找不到播放源" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/request_error"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/request_error_text"
+            style="@style/letv_text_13_ffffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="网络异常，请检查设置" />
+
+        <Button
+            android:id="@+id/request_error_btn"
+            style="@style/letv_text_17_blue_white"
+            android:layout_width="144dip"
+            android:layout_height="42dip"
+            android:layout_below="@id/request_error_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/btn_blue_selecter"
+            android:text="刷新重试" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vip_not_login_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/vip_error_text1"
+            style="@style/letv_text_13_ffffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="这是VIP视频，会员登录后才可以观看" />
+
+        <TextView
+            android:id="@+id/vip_error_text2"
+            style="@style/letv_text_20_ffffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vip_error_text1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dip"
+            android:text="VIP会员免费看热映大片" />
+
+        <Button
+            android:id="@+id/vip_not_login_error_button"
+            style="@style/letv_text_17_blue_white"
+            android:layout_width="144dip"
+            android:layout_height="42dip"
+            android:layout_below="@id/vip_error_text2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/btn_blue_selecter"
+            android:text="立即登录" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vip_login_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/vip_error_text1"
+            style="@style/letv_text_13_ffffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="这是VIP视频，会员登录后才可以观看" />
+
+        <TextView
+            android:id="@+id/vip_error_text2"
+            style="@style/letv_text_20_ffffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vip_error_text1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dip"
+            android:text="VIP会员免费看热映大片" />
+
+        <Button
+            android:id="@+id/vip_login_error_button"
+            style="@style/letv_text_17_blue_white"
+            android:layout_width="144dip"
+            android:layout_height="42dip"
+            android:layout_below="@id/vip_error_text2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/btn_blue_selecter"
+            android:text="立即开通会员" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/jump_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/jump_error_text"
+            style="@style/letv_text_13_ffffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="因版权限制，该影片需要跳转到浏览器播放" />
+
+        <Button
+            android:id="@+id/jump_error_button"
+            style="@style/letv_text_17_blue_white"
+            android:layout_width="144dip"
+            android:layout_height="42dip"
+            android:layout_below="@id/jump_error_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/btn_blue_selecter"
+            android:text="跳转网页播放" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ip_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/ip_error_text"
+            style="@style/letv_text_13_ffffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="非常抱歉，当前视频没有海外播放版权" />
+    </RelativeLayout>
+
+</FrameLayout>

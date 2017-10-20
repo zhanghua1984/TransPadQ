@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Light.NoTitleBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="NoTitle">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="myDialog" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+
+        <!--<item name="android:background">@color/transparent</item>-->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!--<item name="android:backgroundDimEnabled">true</item>-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--<item name="android:windowFrame">@null</item>-->
+        <!--<item name="android:gravity">center</item>-->
+        <!--<item name="android:windowIsTranslucent">false</item>-->
+        <!--<item name="android:windowTitleStyle">@null</item>-->
+    </style>
+
+    <!-- CustomAlertDialog -->
+    <style name="comm_alertdialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--圆形进度条风格-->
+    <style name="NumberCircleProgressBar_Default">
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_width">25dp</item>
+        <item name="max">100</item>
+        <item name="progress">10</item>
+        <item name="progress_unreached_color">#7f000000</item>
+        <item name="progress_reached_color">#7fffffff</item>
+        <item name="progress_circle_radius">20dp</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#000000</item>
+        <item name="progress_fill_mode">rotate</item>
+    </style>
+
+    <!-- CustomAlertDialog -->
+    <style name="dialog_base" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

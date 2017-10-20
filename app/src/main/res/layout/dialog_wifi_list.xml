@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip">
+
+        <Button
+            android:id="@+id/btnSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.4GHz"/>
+
+        <TextView
+            android:id="@+id/tvWifiCurrent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前已连接Wifi:"
+            />
+
+        <TextView
+            android:id="@+id/tvWifiName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/tvWifiLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lvWifiList"
+        android:layout_width="wrap_content"
+        android:layout_height="200dip"
+        android:layout_below="@+id/llTitle"></ListView>
+
+
+</RelativeLayout>

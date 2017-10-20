@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="orange">#ff7d00</color>
+    <color name="orange2">#ff8400</color>
+    <color name="red">#ff0000</color>
+    <color name="green_downloaded">#9abd36</color>
+    <color name="grey_undownload">#b3b3b3</color>
+    <color name="download_background">#cfd0d0</color>
+    <color name="download_bar">#9CBD3F</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="personalitem">#ededed</color>
+    <color name="personalitemround">#898989</color>
+    <color name="round_corner_clicked">#e7e7e7</color>
+    <color name="round_corner">#f3f3f3</color>
+    <color name="common_background_color">#E4E6E8</color>
+    <color name="dialog_background_color">#44787878</color>
+    <!-- 通用 -->
+    <color name="com_title_first_bg_color">#f3f3f3</color>
+    <color name="com_title_second_bg_color">#eeeeee</color>
+    <color name="com_content_bg_color">#e4e6e8</color>
+    <color name="com_orange_color">#ec6810</color>
+    <color name="more_common_color">#323438</color>
+    <color name="more_selector_color">#323438</color>
+    <color name="com_grey_line_color">#cdd0d4</color>
+    <color name="com_list_pressed_bg_color">#d8d8d8</color>
+    <color name="com_list_normal_bg_color">#e8ebee</color>
+    <color name="setting_left_text_color">#46494b</color>
+    <color name="btn_pressed_text_color">#ec6810</color>
+    <color name="btn_unpress_text_color">#555555</color>
+    <color name="dialog_grey_line_color">#d7d7d7</color>
+    <color name="listview_divider_color">#d3d4d6</color>
+    <color name="feedback_text_grey_color">#606162</color>
+    <color name="no_content_color">#ff7500</color>
+
+    <!-- 首页标签 -->
+    <color name="tab_select_color">#ec6810</color>
+    <color name="tab_unselect_color">#787878</color>
+    <!-- 软件推荐 -->
+    <color name="item_text_color">#46494b</color>
+
+    <!-- 自定义频道 -->
+    <color name="list_more_select">#d8d8d8</color>
+    <color name="list_more_unselect">#e4e6e8</color>
+
+    <!-- mainPage -->
+    <color name="main_bottom_background_color">#404040</color>
+    <color name="main_bottom_text_clicked_color">#E26E2B</color>
+    <color name="main_bottom_text_unclick_color">#84868c</color>
+
+    <!-- personal -->
+    <color name="vip_coin_left_color">#4a4a4a</color>
+    <color name="vip_user_name_color">#000000</color>
+    <color name="personal_list_title_text_color">#46494b</color>
+    <color name="personal_list_description_text_color">#606162</color>
+    <color name="login_userlist_text_color">#838489</color>
+
+    <!-- cacheItem -->
+    <color name="cache_item_name_text_color">#46494B</color>
+    <color name="cache_item_status_text_color">#787878</color>
+    <color name="cache_item_season_text_color">#606162</color>
+    <color name="cache_item_green_color">#5c7c02</color>
+    <color name="cache_page_text_grey_color">#444444</color>
+    <color name="cache_page_text_orange_color">#ec6810</color>
+
+    <!-- changeNameDialog -->
+
+    <color name="change_name_dialog_title_color">#5c5c5c</color>
+    <color name="nickname_dialog_input_text_color">#969696</color>
+    <color name="nickname_dialog_line">#bfbfbf</color>
+    <color name="nickname_dialog_bg_clicked_color">#e7e7e7</color>
+    <color name="nickname_dialog_bg_unclick_color">#eeeeee</color>
+    <color name="nickname_dialog_text_clicked_color">#ec6810</color>
+    <color name="nickname_dialog_text_unclick_color">#555555</color>
+    <color name="nickname_dialog_bg_color">#f7f7f7</color>
+
+    <!-- updateDialog -->
+
+    <color name="update_dialog_title_color">#5c5c5c</color>
+    <color name="update_dialog_input_text_color">#969696</color>
+    <color name="update_dialog_line">#bfbfbf</color>
+    <color name="update_dialog_bg_clicked_color">#e7e7e7</color>
+    <color name="update_dialog_bg_unclick_color">#eeeeee</color>
+    <color name="update_dialog_text_clicked_color">#ec6810</color>
+    <color name="update_dialog_text_unclick_color">#555555</color>
+    <color name="update_dialog_bg_color">#f7f7f7</color>
+
+    <!-- changeHeadDialog -->
+    <color name="headicon_dialog_title_color">#5c5c5c</color>
+    <color name="headicon_dialog_input_text_color">#969696</color>
+    <color name="headicon_dialog_line">#bfbfbf</color>
+    <color name="headicon_dialog_bg_clicked_color">#e7e7e7</color>
+    <color name="headicon_dialog_bg_unclick_color">#eeeeee</color>
+    <color name="headicon_dialog_text_clicked_color">#ec6810</color>
+    <color name="headicon_dialog_text_unclick_color">#555555</color>
+    <color name="headicon_dialog_bg_color">#f7f7f7</color>
+    <color name="headicon_item_text_color">#6a6a6a</color>
+    <color name="dialog_bg_clicked_color">#ececec</color>
+    <color name="dialog_sure_color">#343434</color>
+    <color name="dialog_cancel_color">#6a6a6a</color>
+    <color name="dialog_tip_color">#508ad5</color>
+    <color name="dialog_bg_color">#f7f7f7</color>
+    <color name="dialog_btn_color">#f4f4f4</color>
+    <color name="dialog_line">#d7d7d7</color>
+    <color name="dialog_hintcolor">#8e8e8e</color>
+    <color name="dialog_commtv">#6a6a6a</color>
+    <color name="view_gesture_color">#00ffff</color>
+    <color name="view_gesture_uncertain_color">#ff0000</color>
+
+    <!-- fonePayActivity -->
+    <color name="background_color">#1d1e20</color>
+    <color name="gray">#808080</color>
+    <color name="BgColor">#ffd1dce9</color>
+
+    <!-- login -->
+    <color name="login_username_color">#46494b</color>
+    <color name="login_third_text_color">#46494b</color>
+    <color name="login_userlist_item_pressed">#efefef</color>
+
+    <!-- localActivity -->
+    <color name="local_view_bg_color">#e4e6e8</color>
+    <color name="local_pager_title_bg_color">#eeeeee</color>
+    <color name="tv_secleced">#ec6810</color>
+    <color name="tv_normal">#555555</color>
+    <color name="tv_local_unclick">#6a6a6a</color>
+    <color name="tv_local_vedio_item_color">#46494b</color>
+    <color name="tv_local_folder_item_color">#606162</color>
+    <color name="local_private_divider_color">#bfbfbf</color>
+    <color name="local_private_bottom_color">#eeeeee</color>
+    <color name="tv_local_private_desc_color">#ec6810</color>
+    <color name="local_private_bg_color">#E4E6E8</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="background_container">#eeeeee</color>
+    <color name="local_btn_more_video">#444444</color>
+    <color name="local_btn_delete_color">#646464</color>
+    <!-- search -->
+    <color name="search_title_selected_color">#f56b0f</color>
+    <color name="search_text_green_color">#799724</color>
+    <color name="search_text_blue_color">#06a1e4</color>
+    <color name="search_text_orange_color">#f56b0f</color>
+    <color name="search_text_black_color">#46494b</color>
+
+    <!-- weixindialog -->
+    <color name="weixin_bt_pressed_color">#282a2b</color>
+    <color name="weixin_bt_unpress_color">#303537</color>
+
+    <!-- selectshare -->
+    <color name="share_platform_pressed_color">#dddddd</color>
+    <color name="share_select_partingline_color">#ec6810</color>
+    <color name="share_select_text_color">#46494b</color>
+
+    <!-- player start -->
+    <color name="video_info_tab_bg_color">#eeeeee</color>
+    <color name="video_info_tab_line">#ec6810</color>
+    <color name="video_tab_textcolor">#787878</color>
+    <color name="video_title_bar_small_bg">#F3F3F3</color>
+    <color name="video_title_bar_title_textcolor">#444444</color>
+    <color name="video_detail_bj">#e4e6e8</color>
+    <color name="video_detail_video_name_textcolor">#323438</color>
+    <color name="video_detail_normal_textcolor">#46494b</color>
+    <color name="video_series_item_bg_watching">#eb670f</color>
+    <color name="video_series_textcolor_cached">#63810e</color>
+    <color name="video_comment_edittext_hint">#606162</color>
+    <color name="video_comment_date_color">#949292</color>
+    <color name="video_comment_from_color">#a2a3a4</color>
+    <color name="video_comment_item_bg">#e9ebec</color>
+    <color name="video_full_title_bg">#99000000</color>
+    <color name="video_full_time_textcolor">#dfe0dd</color>
+    <color name="video_full_recommend_series_textcolor">#bebdbc</color>
+    <color name="video_full_more_divider">#6e6d6d</color>
+    <color name="video_series_item_watched">#dddddd</color>
+    <color name="video_series_button_click">#e7e7e7</color>
+    <color name="videofull_series_mode1_item_text_color">#bebdbc</color>
+    <color name="videofull_series_mode1_item_bg">#a0000000</color>
+    <color name="videofull_series_mode1_item_line">#6b6b6b</color>
+    <color name="videofull_airone_code_shape">#514e4a</color>
+    <color name="h5_player_hd_player_click">#ce5707</color>
+    <color name="h5_player_hd_player_normal">#ec6810</color>
+    <color name="videofull_subtitle_text_shadowcolor">#4b000000</color>
+    <color name="airone_window_bg">#cc000000</color>
+    <color name="video_cache_un_finished">#959595</color>
+    <color name="line_video_reservation">#63810e</color>
+    <!-- player end -->
+
+
+    <!-- quick play -->
+    <color name="quick_play_item_name_color">#46494b</color>
+    <color name="quick_play_item_time_color">#606162</color>
+
+    <!-- record -->
+    <color name="record_default_text_color">#8d8d8d</color>
+    <color name="record_charge_channel_text_color">#ec6810</color>
+    <color name="record_consume_type_text_color">#508ad5</color>
+    <color name="record_un_text_color">#46494b</color>
+
+    <!-- notification -->
+    <color name="notification_title_delete_color">#646464</color>
+    <color name="notification_background_color">#e8ebee</color>
+    <color name="notification_download_title_color">#46494b</color>
+    <color name="notification_progress_background_color">#b5babc</color>
+
+    <!-- epg -->
+    <color name="epg_unsubscribed_color">#e66007</color>
+    <color name="epg_subscribed_color">#449e18</color>
+
+    <color name="buy_single_text_color">#5c5c5c</color>
+    <color name="buy_single_button_text_color">#fdfcfc</color>
+    <color name="buy_single_button_bg_color">#ec6810</color>
+    <color name="buy_single_button_bg_color_pressed">#ff7e2f</color>
+    <color name="recommend_package_item_text_bg">#3c3c3c</color>
+    <color name="have_buy_vip_name_text_color">#ec6810</color>
+    <color name="have_buy_original_price_text_color">#949596</color>
+    <color name="buy_success_text_color">#5b9721</color>
+    <color name="buy_success_goon_play_text_color">#eeeeee</color>
+    <color name="buy_success_reminder_text_color">#525252</color>
+    <color name="buy_single_give_item_bg">#f3f3f3</color>
+    <color name="translucent_background">#00000000</color>
+    <color name="menu_window_bg">#88323232</color>
+    <color name="video_player_title_bar_bg">#CC201a1c</color>
+    <color name="line_color">#88ffffff</color>
+    <color name="title_bg_color">#80000000</color>
+    <color name="tpq_selector">#53000000</color>
+
+
+    <color name="popwindow_unselect">#120e0d</color>
+    <color name="popwindow_select">#000000</color>
+
+    <color name="main_color">#fc4c02</color>
+
+
+</resources>

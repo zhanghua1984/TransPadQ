@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rst>
+    <shost>http://d.17url.net:82/mv</shost>
+    <host>http://v4.100tv.com:80/vi</host>
+    <result>0</result>
+    <modules>
+        <module url="" name="海报">
+            <cnts>
+                <cnt ourl="http://v.youku.com/v_show/id_XNTcyODEwMDUy.html?from=y1.6-96.1.1.2f60705e4e1111e19194" pic2="" pic1="" utp="0" url="[host]/player/xyzplay?cid=3614612&amp;loop=1&amp;ifp=13&amp;clid=44565&amp;ccid=1561461&amp;videoid=111048876&amp;actionpath=32&amp;posterid=null"/>
+                <cnt pic2="[shost]/upload/columns/201505/22/201505221723084991.png?1432286588480" pic1="assets://images/201505221723084991.jpg" utp="10" url="[host]/player/td?tid=&amp;posterid=null"/>
+            </cnts>
+        </module>
+    </modules>
+</rst>

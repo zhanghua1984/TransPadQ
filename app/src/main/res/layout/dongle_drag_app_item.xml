@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drag_app_image"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        app:riv_corner_radius="5dp"
+        app:riv_mutate_background="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_launcher"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/drag_app_name"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/drag_app_image"
+        android:textSize="12sp" />
+
+
+
+</RelativeLayout>

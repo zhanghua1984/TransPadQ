@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:id="@+id/ad_video_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ff000000"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/ad_video_click"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:visibility="visible" >
+
+            <VideoView
+                android:id="@+id/ad_video_first"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:background="#00ffffff"
+                android:visibility="gone" />
+
+            <VideoView
+                android:id="@+id/ad_video_second"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:background="#00ffffff"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ad_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="13dip"
+            android:layout_marginTop="13dip"
+            android:background="#80000000"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+id/ad_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#ffffffff"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ad_mute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ad_time"
+                android:padding="10dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/not_muted"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ad_vip"
+            style="@style/letv_text_16_blue_white"
+            android:layout_width="125dip"
+            android:layout_height="36dip"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="13dip"
+            android:layout_marginRight="13dip"
+            android:background="@drawable/ad_btn_blue_selecter"
+            android:gravity="center"
+            android:text="跳过广告  ＞"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/ad_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/pause_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/pause_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/pause_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:src="@drawable/ad_pause_del"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/wifiTopViewHalfAd"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@color/letv_color_ff000000"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/wifiTopViewHalfViewAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/wifi_tag_bg" />
+
+        <TextView
+            android:id="@+id/text_top_ad"
+            style="@style/letv_ad_text_18_ffffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wifiTopViewHalfViewAd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="@string/ad_play_view_text_top" />
+
+        <TextView
+            android:id="@+id/text_bottom_ad"
+            style="@style/letv_ad_text_18_ffffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_top_ad"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/ad_play_view_text_bottom" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/request_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

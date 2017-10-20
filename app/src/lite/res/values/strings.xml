@@ -1,0 +1,30 @@
+<resources>
+    <string name="my_app">我的应用</string>
+    <string name="multi_media">多媒体</string>
+    <string name="recommended">推荐应用</string>
+    <string name="add_app">添加应用</string>
+    <string name="select_all">全部选择</string>
+    <string name="cancel_all">全部取消</string>
+    <string name="add_all">全部添加</string>
+    <string name="add">添加</string>
+    <string name="delete_my_app_dialog">确定要删除%1$s吗？</string>
+    <string name="connect_freq_24">2.4g普通连接</string>
+    <string name="connect_freq_5">5g高速连接</string>
+    <string name="app_about_name">传送宝</string>
+    <string name="app_about_name_aoc">传送宝 for AOC</string>
+    <string name="feedback_title_pad">硬件问题</string>
+    <string name="feedback_edit_text_content_hint">硬件问题，软件问题，内容问题，其他问题......</string>
+    <string name="settings_link_unlink">未连接设备</string>
+    <string name="viewpager_title_download">下载管理</string>
+    <string name="dlna_device_not_found">未发现任何设备</string>
+    <string name="dlna_select_device">请选择连接设备</string>
+    <string name="dlna_warning">请检查小宝是否处于常规模式，同时确保手机与小宝在同一局域网内。</string>
+    <string name="dlna">DLNA</string>
+    <string name="dlna_stop">退出连接</string>
+    <string name="dlna_playing">投放中</string>
+    <string name="dlna_retry">重试</string>
+    <string name="dlna_cancel">否</string>
+    <string name="dlna_opening_message">正在启动设备播放...</string>
+    <string name="dlna_opening_failed">您的设备暂时无法播放，是否重试？</string>
+    <string name="dlna_select_nothing">请选择接收列表</string>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_ib_two"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/title_bg_color">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/tp" />
+
+        <LinearLayout
+            android:id="@+id/rl_back"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/tpq_homepage_button_selector">
+
+            <ImageView
+                android:id="@+id/iv_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tpq_media_back" />
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_download"
+                android:text="@string/music_back"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+                -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_refresh"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tpq_homepage_button_selector">
+
+            <ImageView
+                android:id="@+id/iv_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tpq_media_refresh" />
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_set"
+                android:text="@string/refresh"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+                -->
+        </LinearLayout>
+    </RelativeLayout>
+
+    <GridView
+        android:layout_marginTop="30dp"
+        android:id="@+id/gv_menu"
+        android:layout_below="@+id/rl_ib_two"
+        android:layout_width="530dp"
+        android:layout_marginLeft="65dp"
+        android:layout_height="215dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="18dp"
+        android:horizontalSpacing="5dp"></GridView>
+</RelativeLayout>

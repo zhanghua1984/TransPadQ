@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/settings_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#7a000000">
+
+        <LinearLayout
+            android:id="@+id/app_back"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/tpq_homepage_button_selector"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/tpq_media_back" />
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/music_back"
+                android:textColor="#ffffff"
+                android:textSize="11sp"
+                />
+                -->
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/title_download"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="29dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:text="@string/viewpager_title_download"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textSize="20sp"/>-->
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/linkDevice"
+                layout="@layout/setting_item_version" />
+
+            <include layout="@layout/settings_divide" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/screen"
+                    layout="@layout/setting_item_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/settings_divide" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/picture"
+                layout="@layout/setting_item_noswitch" />
+
+            <include layout="@layout/settings_divide" />
+
+            <include
+                android:id="@+id/about"
+                layout="@layout/setting_item_noswitch" />
+
+            <include layout="@layout/settings_divide" />
+
+            <include
+                android:id="@+id/update"
+                layout="@layout/setting_item_noswitch" />
+
+            <include layout="@layout/settings_divide" />
+
+            <include
+                android:id="@+id/feedback"
+                layout="@layout/setting_item_noswitch" />
+
+            <include layout="@layout/settings_divide" />
+
+            <include
+                android:id="@+id/help"
+                layout="@layout/setting_item_noswitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

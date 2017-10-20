@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/menu_window_bg"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/window_back_iv"
+        android:layout_width="28dp"
+        android:layout_height="35dp"
+        android:src="@drawable/index_back"
+        android:layout_marginLeft="10dp"
+        />
+    <LinearLayout
+        android:id="@+id/ll_four_button"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/window_back_iv"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/navigation"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/navigation"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/network"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/network"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/music"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center" />
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/ll_four_button"
+        android:id="@+id/v_line"
+        android:layout_width="37dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_FM"
+        android:layout_below="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FM"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:gravity="center" />
+    <ImageView
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/tv_FM"
+        android:id="@+id/iv_index_mic"
+        android:layout_width="28dp"
+        android:layout_height="32dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/index_mic" />
+    <ImageView
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/iv_index_mic"
+        android:id="@+id/iv_index_sound"
+        android:layout_centerHorizontal="true"
+        android:layout_width="28dp"
+        android:layout_height="32dp"
+        android:src="@drawable/index_sound" />
+</RelativeLayout>

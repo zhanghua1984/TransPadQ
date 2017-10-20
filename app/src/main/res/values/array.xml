@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="cache_phone_facturers">
+        <item>MB526</item>
+        <item>HTC G7</item>
+        <item>M9</item>
+        <item>U8860</item>
+        <item>ZTE U807</item>
+        <item>HS-U939</item>
+    </string-array>
+    <string-array name="video_format">
+        <item>3g2</item>
+        <item>3gp</item>
+        <item>3gpp</item>
+        <item>avi</item>
+        <item>flv</item>
+        <item>mkv</item>
+        <item>mov</item>
+        <item>mp4</item>
+        <item>f4v</item>
+        <item>mpg</item>
+        <item>mpeg</item>
+        <item>rm</item>
+        <item>rmvb</item>
+        <item>tp</item>
+        <item>vob</item>
+        <item>wmv</item>
+        <item>ts</item>
+    </string-array>
+    <string-array name="audio_format">
+        <item>mp3</item>
+        <item>ogg</item>
+        <item>flac</item>
+        <item>aac</item>
+        <item>wav</item>
+        <item>mid</item>
+        <item>m4a</item>
+        <item>wma</item>
+        <item>amr</item>
+    </string-array>
+    <string-array name="image_format">
+        <item>jpeg</item>
+        <item>jpg</item>
+        <item>png</item>
+        <item>jpe</item>
+        <item>bmp</item>
+    </string-array>
+    <string-array name="illegal_folder">
+        <item>youku</item>
+        <item>iqiyi</item>
+        <item>QIYIVideo</item>
+        <item>QIYIVideo_Local</item>
+        <item>Letv</item>
+        <item>tencent</item>
+        <item>Tencent</item>
+        <item>sohu</item>
+        <item>shvdownload</item>
+        <item>100tv</item>
+        <item>baidu</item>
+        <item>com.qiyi.video</item>
+        <item>Android/data</item>
+        <item>www.jiajia.tv</item>
+        <item>tea_cache</item>
+    </string-array>
+    <string-array name="home_fix_app_package">
+        <item>cn.wps.moffice_i18n</item>
+        <item>com.smartisan.calendar</item>
+        <item>com.netease.mobimail</item>
+        <item>com.fihtdc.filemanager</item>
+    </string-array>
+    <string-array name="voice_page_app_package">
+        <item>cn.kuwo.kwmusichd</item>
+        <item>cn.safetrip.edog.transpad</item>
+    </string-array>
+    <string-array name="home_fix_app_download_url">
+        <item>http://211.151.137.46/apps/WPSOfficeV5.9.3_sign.apk</item>
+        <item>http://211.151.137.46/apps/hammar_calendar_1.5_sign.apk</item>
+        <item>http://211.151.137.46/apps/WangyiV3.8.4_sign.apk</item>
+        <item>http://211.151.137.46/apps/file_manager_5.0010.05_sign.apk</item>
+    </string-array>
+    <string-array name="voice_app_download_url">
+        <item>http://211.151.137.46/apps/kuwo.apk</item>
+        <item>http://211.151.137.46/apps/CTBMap.apk</item>
+    </string-array>
+    <string-array name="voice_app_icon_download_url">
+        <item>http://211.151.137.46/market/images/icon_11.png</item>
+        <item>http://211.151.137.46/market/images/icon_10.png</item>
+    </string-array>
+    <string-array name="home_fix_app_image_url">
+        <item>http://211.151.137.46/market/images/icon_02.png</item>
+        <item>http://iconmatrix.sharpmark.net/uploads/icons/com_lgl_calendar_icon.png</item>
+        <item>http://211.151.137.46/market/images/icon_05.png</item>
+        <item>http://iconmatrix.sharpmark.net/uploads/icons/com_huawei_hidisk_icon.png</item>
+    </string-array>
+</resources>

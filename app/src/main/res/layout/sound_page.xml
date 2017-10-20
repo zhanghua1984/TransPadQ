@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_sound"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="300dp"
+    android:layout_height="103dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:gravity="center"
+    android:background="@drawable/dialog_background">
+    <ImageView
+        android:id="@+id/iv_volume_lowish"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/volume_lowish" />
+
+    <SeekBar
+        android:id="@+id/sb_volume_seekbar"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/iv_volume_lowish"
+        android:maxHeight="4dp"
+        android:minHeight="4dp"
+        android:progressDrawable="@drawable/light_progress_background"
+        android:thumb="@drawable/set_light_ball"
+    android:secondaryProgress="0" />
+
+    <ImageView
+        android:id="@+id/iv_volume_lound"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/sb_volume_seekbar"
+        android:src="@drawable/volume_loud" />
+    />
+</RelativeLayout>
+</RelativeLayout>

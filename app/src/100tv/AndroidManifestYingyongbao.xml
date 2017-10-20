@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="cn.transpad.transpadui"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="com.fone.player.skinv01">
+
+    <uses-feature android:name="android.hardware.usb.accessory"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.sec.android.permission.PERSONAL_MEDIA"/>
+    <uses-permission android:name="com.android.setting.permission.ALLSHARE_CAST_SERVICE"/>
+
+
+    <application
+        android:name=".main.TransPadApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <instrumentation
+            android:name="android.test.InstrumentationTestRunner"
+            android:label="Testing"
+            android:targetPackage="cn.transpad.transpadui"></instrumentation>
+
+        <activity
+            android:name=".main.HomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".main.MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name="cn.trans.core.api.TransService"/>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+
+        <activity
+            android:name=".main.MenuActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+
+        <service
+            android:name=".storage.download.CacheDownloadService"/>
+
+        <activity
+            android:name=".main.NotificationViewActivity"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent"></activity>
+
+        <activity
+            android:name=".main.TPBrowserActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW">
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT">
+                </category>
+                <category android:name="android.intent.category.BROWSABLE">
+                </category>
+                <category android:name="android.intent.category.OPENABLE">
+                </category>
+
+                <data android:scheme="transpad"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".player.activity.VideoPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".player.activity.AudioPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".main.ForceUpdate"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="standard"
+            android:theme="@style/myDialog"
+            >
+        </activity>
+        <activity
+            android:name=".player.activity.WebViewPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            />
+        <activity
+            android:name=".player.sohu.SohuPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            />
+
+        <service
+            android:name=".service.NotificationFetcherService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"></action>
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config"
+                />
+        </service>
+        <service
+            android:name=".player.service.AudioPlayerService"
+            android:process=":audioplayer"/>
+
+        <receiver
+            android:name=".player.receiver.AudioPlayerReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.TPApplicationReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="17Rzo3x4z3LVGQcocbjTEk7G"/>
+        <service
+            android:name=".storage.download.CacheDownloadService"/>
+        <!-- 监听网络变化 -->
+        <receiver
+            android:name=".storage.download.ConnectionChangeReceiver"
+            android:label="NetworkConnection">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <!-- 监听存储设备挂载状态变化 -->
+        <receiver
+            android:name=".storage.download.MediaReceiver"
+            android:label="StorageConnection">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_REMOVED"/>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVAL"/>
+                <action android:name="android.intent.action.MEDIA_NOFS"/>
+                <action android:name="android.intent.action.MEDIA_SHARED"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTABLE"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- start sohu sdk -->
+        <!-- 内置广告跳转页面 -->
+        <activity
+            android:name="com.sohuvideo.sdk.EventActivity"
+            android:configChanges="orientation|keyboardHidden"></activity>
+        <!-- 应用日志服务 -->
+        <service
+            android:name="com.sohuvideo.base.logsystem.LogService"
+            android:exported="false"
+            android:label="CoreService"></service>
+        <!-- end sohu sdk -->
+
+
+        <!-- start Letv SDK -->
+        <activity
+            android:name="com.letv.sdk.onehundredtv.video.play.impl.LetvWebViewActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.letv.sdk.onehundredtv.video.play.impl.BasePlayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <!-- 广告内置webview页面 -->
+        <activity
+            android:name="com.letv.ads.view.LetvWebViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+
+        <provider
+            android:name="com.letv.datastatistics.db.StatisContentProvider"
+            android:authorities="com.letv.datastatistics.db.StatisContentProvider.onehundredtv"/>
+        <!-- end Letv SDK -->
+
+        <meta-data android:value="578eeecd67e58ecfb50034bb" android:name="UMENG_APPKEY"></meta-data>
+        <meta-data android:value="10.52.7.3245.9001.9001064" android:name="UMENG_CHANNEL"/>
+
+    </application>
+
+</manifest>
